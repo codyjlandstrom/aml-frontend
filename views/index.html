@@ -34,14 +34,20 @@
       <p class="bold">Oh hi,</p>
       
       <p>Tell me your hopes and dreams:</p>
-      
-      <form>
-        <input name="measure" type="text" maxlength="100" placeholder="Cool Measure" aria-labelledby="submit-measure">
-        <textarea name="rules" placeholder="Rules"></textarea>
-        <button type="submit" id="submit-measure">Submit Measure</button>
+
+      <form action="https://2p4fw5ceka.execute-api.us-west-2.amazonaws.com/prod/measures/" enctype="multipart/form-data" id="measureUpdate">
+        <input name="file" type="text" maxlength="100" placeholder="Cool Measure" aria-labelledby="update-measure">
+        <textarea name="content" placeholder="Rules"></textarea>
+        <button type="submit" id="update-measure">Update Measure</button>
       </form>
+      
+     <!--  <form>
+        <input name="measure" type="text" maxlength="100" placeholder="Cool Measure" aria-labelledby="submit-measure">
+        <button type="submit" id="submit-measure">Submit Measure</button>
+      </form> -->
 
       <section class="list">
+        <h2>Measures:</h2>
         <ul id="list">
          <!--  <li><a href="/detail">Detail Page</a></li>
           <li><a href="/measures">Measures Page</a></li> -->
@@ -52,21 +58,16 @@
 
       <hr>
       
-      <section class="measures">
+      <!-- <section class="measures">
         <ul id="measures"></ul>
-      </section>
+      </section> -->
       
       
     </main>
 
     <footer>
-      Made with <a href="https://glitch.com">Glitch</a>!
+      Made with ❤️
     </footer>
-
-    <!-- include the Glitch button to show what the webpage is about and
-          to make it easier for folks to view source and remix -->
-    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
-    <script src="https://button.glitch.me/button.js"></script>
 
   </body>
 </html>
